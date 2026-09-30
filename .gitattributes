@@ -1,0 +1,5 @@
+# The evaluator verifies SHA-256 of the supplied files under code/data/ and
+# code/PACKAGE_MANIFEST.json. Any line-ending conversion on checkout would
+# change those bytes and make common.load_data() reject the benchmark files, so
+# every file is checked out byte-exactly on every platform.
+* -text
